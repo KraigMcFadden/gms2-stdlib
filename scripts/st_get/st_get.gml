@@ -6,10 +6,10 @@
 
 var st = argument0;
 var key = argument1;
-var arr = st_getArray(st);
+var arr = _st_array(st);
 
 // search in separate chaining fashion
-var hash = st_hash(st, key)
+var hash = _st_hash(st, key)
 var currentNode = arr[hash];
 while (currentNode != noone) {
 	if (currentNode.key == key) {

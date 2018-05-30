@@ -3,7 +3,7 @@
 /// @param st
 
 var st = argument0;
-var arr = st_getArray(st);
+var arr = _st_array(st);
 
 // search in separate chaining fashion and free nodes
 for (var i = 0; i < array_length_1d(arr); i++) {

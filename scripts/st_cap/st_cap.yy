@@ -1,8 +1,8 @@
 {
-    "id": "e49b3902-155d-4d13-a269-9e52b9366327",
+    "id": "02056ad9-bea1-460d-8266-c4cf68e6c343",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "st_getSize",
+    "name": "st_cap",
     "IsCompatibility": false,
     "IsDnD": false
 }

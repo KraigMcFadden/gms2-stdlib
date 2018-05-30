@@ -5,8 +5,8 @@
 
 var st = argument0;
 var key = argument1;
-var arr = st_getArray(st);
-var hash = st_hash(st, key);
+var arr = _st_array(st);
+var hash = _st_hash(st, key);
 
 var node = arr[hash];
 if (node != noone and node.key == key) {

@@ -6,18 +6,18 @@
 
 var st = argument0;
 
-var node = instance_create_depth(0, 0, depth, objNode);
+var node = createUtil(objNode);
 node.key = argument1;
 node.value = argument2;
 
 // resize if st is too small
-if (st_getSize(st) > 3 * st_getCap(st) / 4)
-	st_scale(st, 2.0);
+if (st_size(st) > 3 * st_cap(st) / 4)
+	_st_scale(st, 2.0);
 
-var arr = st_getArray(st);
+var arr = _st_array(st);
 
 // add in separate chaining fashion
-var hash = st_hash(st, node.key)
+var hash = _st_hash(st, node.key)
 var currentNode = arr[hash];
 
 // replace existing key if possible

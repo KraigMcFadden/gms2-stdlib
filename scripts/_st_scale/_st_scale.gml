@@ -4,8 +4,8 @@
 /// @param scale
 
 var st = argument0;
-var arr = st_getArray(st);
-var cap = st_getCap(st);
+var arr = _st_array(st);
+var cap = st_cap(st);
 
 // make scaled table and set ST object to point to it
 var newCap = ceil(cap * argument1);
@@ -18,7 +18,7 @@ for (var i = 0; i < cap; i++)
 {
 	var node = arr[i];
 	while (node != noone) {
-		st_add(st, node.key, node.value);
+		st_put(st, node.key, node.value);
 		var temp = node;
 		node = node.next;
 		instance_destroy(temp, false);

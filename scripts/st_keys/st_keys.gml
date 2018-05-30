@@ -3,9 +3,9 @@
 /// @param st
 
 var st = argument0;
-var arr = st_getArray(st);
+var arr = _st_array(st);
 
-var size = st_getSize(st);
+var size = st_size(st);
 if (size == 0) { return []; }  // just in case st is empty
 var keys = array_create(size, 0);
 var index = 0;
