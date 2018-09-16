@@ -9,6 +9,7 @@ if (!instance_exists(nn) or nn.object_index != objNeuralNet)
 
 var newNn = createUtil(objNeuralNet);
 newNn.eta = nn.eta;
+newNn.mutationProb = nn.mutationProb;
 
 newNn.X = array_create(array_length_1d(nn.X), 0);
 array_copy(newNn.X, 0, nn.X, 0, array_length_1d(nn.X));

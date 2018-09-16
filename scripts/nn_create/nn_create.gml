@@ -13,8 +13,7 @@ var activations = argument1;
 var activationsPrime = argument2;
 
 // initialize net and layers
-var nn = instance_create_layer(0, 0, 
-	Constants.gameLayers[instLayers.UTIL], objNeuralNet);
+var nn = createUtil(objNeuralNet);
 nn.eta = argument3;
 nn.X = newArray(nodes[0], 0);
 nn.activations = array_create(array_length_1d(activations), 0);
@@ -28,6 +27,7 @@ nn.biases = newArray(numLayers - 1, 0);
 nn.zs = newArray(numLayers - 1, 0);
 nn.alphas = newArray(numLayers - 1, 0);
 
+var numParams = 0;
 for (var i = 0; i < numLayers - 1; i++) {
 	// rows is elements in current layer, columns is elements in
 	// layer that is one closer to input
@@ -42,9 +42,12 @@ for (var i = 0; i < numLayers - 1; i++) {
 	for (var j = 0; j < nodes[i + 1]; j++) {
 		for (var k = 0; k < nodes[i]; k++) {
 			w[@ j, k] = random_range(argument4, argument5);
+			numParams++;
 		}
 		b[@ j] = random_range(argument4, argument5);
+		numParams++;
 	}
 }
+nn.mutationProb = 1.0 / numParams;
 
 return nn;

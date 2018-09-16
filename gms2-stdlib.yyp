@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "186bb324-44bb-43f2-8efb-80029d5fe76f",
+            "Value": {
+                "id": "21318733-3d70-41cc-843e-7f578f268567",
+                "resourcePath": "objects\\objNeuralNet\\objNeuralNet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1882d3da-1ae4-4480-9149-5b725dc8d022",
             "Value": {
                 "id": "6aecfcb5-5387-4fed-b080-3558a758f450",
@@ -732,6 +740,14 @@
                 "id": "09cdf903-ea34-4098-aa99-6c210b83a543",
                 "resourcePath": "scripts\\sigmoidPrime\\sigmoidPrime.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d53c7f15-4509-4aef-90a4-36da072ad2a6",
+            "Value": {
+                "id": "c4011a7b-4b03-4dc0-90c5-31590ee507bb",
+                "resourcePath": "views\\d53c7f15-4509-4aef-90a4-36da072ad2a6.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
